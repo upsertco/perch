@@ -11,6 +11,12 @@
 ### Bug Fixes
 
 * text-spacing in diff overlay and help menu ([#95](https://github.com/upsertco/perch/issues/95)) ([52f8cb2](https://github.com/upsertco/perch/commit/52f8cb25ac2f4e273e140631dcc0c9882b2555fa))
+* CLI flags mirroring config settings — `--no-pr`, `--view`, `--no-flash`, `--flash-duration`, `--scroll-padding`, and `--edit-command`. Each overrides the config file (precedence: flag > config > default).
+
+
+### Removed
+
+* Dead config options `[keys]`, `display.context_lines`, `pr.show_labels`, and the deprecated `pr.layout`. Existing config files using these keys still load — the keys are silently ignored.
 
 ## [1.6.0](https://github.com/upsertco/perch/compare/v1.5.1...v1.6.0) (2026-05-29)
 
